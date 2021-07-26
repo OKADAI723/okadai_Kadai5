@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="okadai_Kadai5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tdD-xz-S7Z">
+                                <rect key="frame" x="20" y="94" width="374" height="150"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uia-GE-w46">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="36.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lds-37-u2c">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="÷" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4m3-jg-RbL">
+                                                <rect key="frame" x="128" y="0.0" width="118" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-EH-c60">
+                                                <rect key="frame" x="256" y="0.0" width="118" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9F-gI-JsN">
+                                        <rect key="frame" x="0.0" y="56.5" width="374" height="37"/>
+                                        <state key="normal" title="計算"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pU1-lo-i2j">
+                                        <rect key="frame" x="0.0" y="113.5" width="374" height="36.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pU1-lo-i2j" firstAttribute="leading" secondItem="tdD-xz-S7Z" secondAttribute="leading" id="6ug-sJ-fOZ"/>
+                                    <constraint firstAttribute="height" constant="150" id="HTH-Q2-0fp"/>
+                                    <constraint firstItem="Uia-GE-w46" firstAttribute="top" secondItem="tdD-xz-S7Z" secondAttribute="top" id="I81-8K-Yxl"/>
+                                    <constraint firstItem="pU1-lo-i2j" firstAttribute="top" secondItem="F9F-gI-JsN" secondAttribute="bottom" constant="20" id="JyC-3Z-CcX"/>
+                                    <constraint firstItem="Uia-GE-w46" firstAttribute="leading" secondItem="tdD-xz-S7Z" secondAttribute="leading" id="PAj-cL-Vpz"/>
+                                    <constraint firstItem="F9F-gI-JsN" firstAttribute="top" secondItem="Uia-GE-w46" secondAttribute="bottom" constant="20" id="SZI-iX-Zb1"/>
+                                    <constraint firstAttribute="bottom" secondItem="pU1-lo-i2j" secondAttribute="bottom" id="a3h-au-ymA"/>
+                                    <constraint firstItem="F9F-gI-JsN" firstAttribute="leading" secondItem="tdD-xz-S7Z" secondAttribute="leading" id="dZS-V2-9pJ"/>
+                                    <constraint firstItem="pU1-lo-i2j" firstAttribute="top" secondItem="F9F-gI-JsN" secondAttribute="bottom" constant="20" id="iFc-T0-7Pe"/>
+                                    <constraint firstItem="F9F-gI-JsN" firstAttribute="top" secondItem="Uia-GE-w46" secondAttribute="bottom" constant="20" id="j2X-FD-NjP"/>
+                                    <constraint firstAttribute="trailing" secondItem="pU1-lo-i2j" secondAttribute="trailing" id="jsp-rF-Wz8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uia-GE-w46" secondAttribute="trailing" id="of4-xo-2Yd"/>
+                                    <constraint firstAttribute="trailing" secondItem="F9F-gI-JsN" secondAttribute="trailing" id="pIt-Jh-i3b"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tdD-xz-S7Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CVt-LP-mXG"/>
+                            <constraint firstItem="tdD-xz-S7Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="LU9-WR-DHR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tdD-xz-S7Z" secondAttribute="trailing" constant="20" id="eQr-0m-Udn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="F9F-gI-JsN" id="3lL-I9-VEz"/>
+                        <outlet property="firstTextField" destination="lds-37-u2c" id="9ic-AS-bla"/>
+                        <outlet property="resultLabel" destination="pU1-lo-i2j" id="WSq-bF-m1y"/>
+                        <outlet property="secondTextField" destination="aLm-EH-c60" id="EfK-Yi-Cd7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="79"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
